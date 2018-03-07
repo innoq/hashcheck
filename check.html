@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PW check</title>
+
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="icon" href="assets/padlock.ico">
+
+  <script src="assets/check.js"></script>
+</head>
+
+<body>
+	<h1>Password Check Service</h1>
+	<div id="tls-warning">WARNING: Page is not delivered via HTTPS! Connection is unencrypted or your JavaScript is disabled...</div>
+	<div class="info">
+	
+	<h2>Info</h2>
+	<ul>
+		<li>Your password will be send to the backend as a SHA-1 hash.</li>
+		<li>The connection should be TLS-only, so it is fully encrypted. If not, a warning will be displayed.</li>
+		<li>SHA-1 Hashing will be happen inside your browser with the Web Crypto API (no external libraries).</li>
+	</ul>
+	</div><div class="result">
+	<h2>Self-Check</h2>
+	<pre id="result">Not yet checked</pre>
+	</div><div>
+	<form>
+		<div>
+		<button class="btn check" type="button" id="check">Check Password</button>
+		<div>
+		<input type="password" id="password">
+		</div>
+		</div>
+	</form>
+	</div><div>
+	<h2>API</h2>
+	<h3>Request</h3>
+	<ul>
+		<li>Path: /check</li>
+		<li>Content-Type: application/json</li>
+		<li>Payload: {"hash":"40bd001563085fc35165329ea1ff5c5ecbdbbeef"}</li>
+	</ul>
+	<h3>Response</h3>
+		<ul>
+		<li>JSON</li>
+		<li>Not known: {"known":false}</li>
+		<li>Known: {"known":true,"count":"358"}</li>
+		</ul>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "hashcheck",
+  "version": "0.9.0",
+  "description": "check your password against leaked databases",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon Kölsch <simon.koelsch@innoq.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "redis": "^2.8.0"
+  }
+}

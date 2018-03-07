@@ -1,0 +1,55 @@
+body {
+	font-family: helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	background-color: #24244C;
+	color: white;
+	margin:1rem 2rem 1rem 2rem;
+}
+
+.btn {
+	background-color: transparent;
+	display: block;
+	color: white;
+	border-radios: 0;
+	border: 3px solid white;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1rem; 
+  line-height: 1.3;
+  font-size: 1.3125rem;
+}
+
+.btn:hover {
+    z-index: 1;
+    margin-bottom: 0.5rem;
+    border: 3px solid white;
+    border-radius: 0;
+    background-color: #FF4D67;
+    padding: 1rem 1rem;
+    line-height: 1.3;
+    font-size: 1.3125rem;
+}
+
+.in {
+	width: 25rem;
+}
+
+#password {
+    outline: none;
+    border: 2px solid #24244c;
+    border-radius: 0;
+    caret-color: #ff4d67;
+    display: block;
+    -webkit-transition: background-color 0.175s ease-in-out;
+    transition: background-color 0.175s ease-in-out;
+    padding: 0.5787rem;
+    width: 100%;
+    line-height: 1.375;
+    font-size: 1rem;
+}
+
+#tls-warning {
+    font-size: 2rem;
+    background: #FF4D67;
+    padding: 2rem;
+    font-weight: bold;
+}
