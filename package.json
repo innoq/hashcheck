@@ -9,8 +9,10 @@
   },
   "author": "Simon Kölsch <simon.koelsch@innoq.com>",
   "license": "BSD-3-Clause",
-  "repository" :
-    { "type" : "git", "url" : "https://github.com/innoq/hashcheck"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/innoq/hashcheck"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
