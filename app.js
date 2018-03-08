@@ -69,4 +69,4 @@ app.post('/check', (req, res) => {
 		res.json({error:true})
 	})
 })
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
+app.listen(PORT, () => console.log(`HashCheck listening on port ${PORT}!`))
