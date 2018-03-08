@@ -1,6 +1,6 @@
 {
   "name": "hashcheck",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "check your password against leaked databases",
   "main": "app.js",
   "scripts": {
