@@ -51,9 +51,11 @@ Known: {"known":true,"count":"358"}
 ## Run with docker
 
 Build your image:
+
 `docker build -t hashcheck`
 
 Run the container, for example with:
+
 `docker run --rm -ti -p 8080:3000 -v /local/pwned-passwords-ordered-2.0.txt:/usr/src/hashcheck/pwned-passwords-ordered-2.0.txt:ro hashcheck`
 
 Note: The default path for the dictionary inside the container is `/usr/src/hashcheck/`.
