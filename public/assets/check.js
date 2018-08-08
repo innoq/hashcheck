@@ -47,7 +47,7 @@ function checkAPI(hash) {
 }
 
 function isSecure() {
-	return (document.location.protocol === 'https');
+	return (document.location.protocol === 'https:');
 }
 
 
