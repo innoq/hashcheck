@@ -59,12 +59,22 @@ function checkTLS() {
 	}
 }
 
-// clickhandler for button
+function onClickHandler(){
+	hash(document.querySelector("#password").value).then(function(digest){
+		checkAPI(digest);
+	});
+}
+
 document.addEventListener("DOMContentLoaded", function(event) { 
-	checkTLS()	
+	checkTLS();
 	document.getElementById('check').onclick=function(){
-		hash(document.querySelector("#password").value).then(function(digest){
-			checkAPI(digest)
-		})
+		onClickHandler();
+	}
+
+	document.getElementById('password').onkeypress = function(e) {
+		if (e.keyCode == 13) {
+			onClickHandler();
+			e.preventDefault();
+		}
 	}
 });
